@@ -342,7 +342,7 @@ All trademarks, service marks, and intellectual property rights referenced in th
 
 <br/>
 
-**Made with ❤️ by [Suika Alyang Pratasa](https://github.com/suikaalyangpratasa)**
+**Made with ❤️ by [Suika Alyang Pratasa](https://github.com/SuikaRyp)**
 
 **This project stands with Palestine 🇵🇸**
 

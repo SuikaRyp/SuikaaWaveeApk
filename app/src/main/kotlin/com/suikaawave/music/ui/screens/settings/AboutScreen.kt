@@ -105,7 +105,7 @@ private data class CommunityLink(
 private val leadDeveloper = Contributor(
     name = "Suika Alyang Pratasa",
     roleRes = R.string.credits_lead_developer,
-    githubHandle = "suikaalyangpratasa",
+    githubHandle = "SuikaRyp",
     polygon = MaterialShapes.Cookie9Sided,
     favoriteSongVideoId = "Mh2JWGWvy_Y"
 )
@@ -114,7 +114,7 @@ private val leadDeveloper = Contributor(
 private val collaborators = listOf(
     Contributor(name = "MangYaanz", roleRes = R.string.credits_collaborator, githubHandle = "mangyaanzofficial", polygon = MaterialShapes.Cookie4Sided, favoriteSongVideoId = "m2zUrruKjDQ"),
     Contributor(name = "Yogaa Official", roleRes = R.string.credits_collaborator, githubHandle = "yogaaofficial", polygon = MaterialShapes.Cookie12Sided, favoriteSongVideoId = "zselaN6zPXw"),
-    Contributor(name = "Xyroo", roleRes = R.string.credits_collaborator, githubHandle = "xyroo", polygon = MaterialShapes.Cookie7Sided, favoriteSongVideoId = "Mh2JWGWvy_Y"),
+    Contributor(name = "Xyroo", roleRes = R.string.credits_collaborator, githubHandle = "ObyMoods", polygon = MaterialShapes.Cookie7Sided, favoriteSongVideoId = "Mh2JWGWvy_Y"),
 )
 
 private val communityLinks = listOf(
@@ -197,7 +197,7 @@ private fun DeveloperSocials(
             Icon(painterResource(R.drawable.whatsapp), contentDescription = null)
         }
         FilledTonalButton(
-            onClick = { uriHandler.openUri("https://github.com/suikaalyangpratasa") },
+            onClick = { uriHandler.openUri("https://github.com/SuikaRyp") },
             modifier = Modifier.weight(1f).height(48.dp)
         ) {
             Icon(painterResource(R.drawable.github), contentDescription = null)
@@ -479,9 +479,7 @@ fun AboutScreen(
                 Material3SettingsItem(
                     icon = painterResource(link.iconRes),
                     title = { Text(stringResource(link.labelRes), fontWeight = FontWeight.SemiBold) },
-                    description = if (link.labelRes == R.string.credits_license_name) {
-                        { Text(stringResource(R.string.credits_license_desc)) }
-                    } else null,
+                    description = null,
                     onClick = { uriHandler.openUri(link.url) }
                 )
             }
